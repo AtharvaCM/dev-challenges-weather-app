@@ -1,0 +1,15 @@
+export const ButtonIconCodes = {
+  local_grocery_store: "e547",
+  local_cafe: "e541",
+  local_hotel: "e549",
+  mail: "e158",
+  mail_outline: "e0e1",
+  map: "e55b",
+  key: "e73c",
+  inventory: "e179",
+  info: "e88e",
+  hotel: "e53a",
+  home: "e88a",
+  headphones: "f01f",
+  cancel: "e5c9",
+};

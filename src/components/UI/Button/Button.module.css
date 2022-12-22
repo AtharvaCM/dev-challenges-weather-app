@@ -1,0 +1,129 @@
+.def {
+  @apply rounded-md transition disabled:text-[#9E9E9E];
+}
+
+.outline {
+  @apply rounded-md border bg-white transition disabled:text-[#9E9E9E];
+}
+
+.text {
+  @apply rounded-md bg-white transition disabled:text-[#9E9E9E];
+}
+
+/* Background Color */
+.bg-def {
+  @apply bg-[#E0E0E0];
+}
+
+.bg-primary {
+  @apply bg-[#2962FF];
+}
+
+.bg-secondary {
+  @apply bg-[#455A64];
+}
+
+.bg-danger {
+  @apply bg-[#D32F2F];
+}
+
+/* Background Hover & Focus */
+.hocus-def {
+  @apply hocus:bg-[#AEAEAE];
+}
+
+.hocus-primary {
+  @apply hocus:bg-[#0039CB];
+}
+
+.hocus-secondary {
+  @apply hocus:bg-[#1C313A];
+}
+
+.hocus-danger {
+  @apply hocus:bg-[#9A0007];
+}
+
+.hocus-o-def {
+  @apply hocus:bg-[#E0E0E0];
+}
+
+.hocus-o-primary {
+  @apply hocus:bg-[#2962FF1A]/10;
+}
+
+.hocus-o-secondary {
+  @apply hocus:bg-[#9fb3bd]/10;
+}
+
+.hocus-o-danger {
+  @apply hocus:bg-[#cb9494]/10;
+}
+
+.hocus-t-def {
+  @apply hocus:bg-[#E0E0E0];
+}
+
+.hocus-t-primary {
+  @apply hocus:bg-[#2962FF1A];
+}
+
+.hocus-t-secondary {
+  @apply hocus:bg-[#9fb3bd];
+}
+
+.hocus-t-danger {
+  @apply hocus:bg-[#cb9494];
+}
+
+/* Border Color */
+.border-def {
+  @apply border-[#AEAEAE];
+}
+
+.border-primary {
+  @apply border-[#3D5AFE];
+}
+
+.border-secondary {
+  @apply border-[#1C313A];
+}
+
+.border-danger {
+  @apply border-[#9A0007];
+}
+
+/* Text Colors */
+.text-def {
+  @apply text-[#4f4f4f];
+}
+
+.text-primary {
+  @apply text-[#3D5AFE];
+}
+
+.text-secondary {
+  @apply text-[#1C313A];
+}
+
+.text-danger {
+  @apply text-[#9A0007];
+}
+
+/* Shadow */
+.btn-shadow {
+  @apply shadow-[0_2px_3px_rgba(51,51,51,0.2)];
+}
+
+/* Size */
+.size-sm {
+  @apply py-1.5 px-3;
+}
+
+.size-md {
+  @apply py-2 px-4;
+}
+
+.size-lg {
+  @apply py-2.5 px-5;
+}
