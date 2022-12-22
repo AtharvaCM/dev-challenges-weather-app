@@ -43,7 +43,7 @@
 
 ## Overview
 
-![screenshot](src/assets/HeavyCloud.png)
+![screenshot](src/assets/HeavyCloud.png?raw=true)
 
 You can check out the demo here - [button-challenge-demo](https://devchallenges-button-atharvacm.netlify.app/)  
 This was a good experience overall, I got to know how a reusable & customizable component is made in React and what are the challenges and caveats it presents. It also improved my basic understanding of the DOM and how Tailwind CSS applies the styles that we write in classes.
