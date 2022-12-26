@@ -12,4 +12,5 @@ export const ButtonIconCodes = {
   home: "e88a",
   headphones: "f01f",
   cancel: "e5c9",
+  gps_fixed: "e1b3",
 };
