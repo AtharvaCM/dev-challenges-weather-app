@@ -8,7 +8,7 @@ export type ButtonPropType = {
   size?: "sm" | "md" | "lg";
   color?: "default" | "primary" | "secondary" | "danger";
   className?: string;
-  startIcon?:
+  starticon?:
     | "local_grocery_store"
     | "local_cafe"
     | "local_hotel"
@@ -21,8 +21,9 @@ export type ButtonPropType = {
     | "hotel"
     | "home"
     | "headphones"
-    | "cancel";
-  endIcon?:
+    | "cancel"
+    | "gps_fixed";
+  endicon?:
     | "local_grocery_store"
     | "local_cafe"
     | "local_hotel"
@@ -35,5 +36,6 @@ export type ButtonPropType = {
     | "hotel"
     | "home"
     | "headphones"
-    | "cancel";
+    | "cancel"
+    | "gps_fixed";
 };

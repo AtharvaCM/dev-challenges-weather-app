@@ -20,8 +20,8 @@ const Button: React.FC<
     size = "md",
     color = "default",
     className,
-    startIcon,
-    endIcon,
+    starticon,
+    endicon,
   } = props;
   console.log("variant: ", variant);
   console.log("disabled: ", disabled);
@@ -145,9 +145,11 @@ const Button: React.FC<
       disabled: disabled,
       onClick: () => console.log("clicked"),
     },
-    startIcon && <span className="material-icons">{startIcon}</span>,
+    starticon && (
+      <span className="material-icons leading-[unset]">{starticon}</span>
+    ),
     children,
-    endIcon && <span className="material-icons">{endIcon}</span>
+    endicon && <span className="material-icons leading-[unset]">{endicon}</span>
   );
 };
 
