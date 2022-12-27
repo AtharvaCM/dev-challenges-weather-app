@@ -5,7 +5,7 @@ export type ButtonPropType = {
   variant?: "default" | "outline" | "text";
   disableShadow?: boolean;
   disabled?: boolean;
-  size?: "sm" | "md" | "lg";
+  size?: "xs" | "sm" | "md" | "lg";
   color?: "default" | "primary" | "secondary" | "danger";
   className?: string;
   starticon?:
