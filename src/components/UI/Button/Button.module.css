@@ -116,6 +116,10 @@
 }
 
 /* Size */
+.size-xs {
+  @apply py-1 px-2;
+}
+
 .size-sm {
   @apply py-1.5 px-3;
 }

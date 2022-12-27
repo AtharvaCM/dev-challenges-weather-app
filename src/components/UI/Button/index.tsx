@@ -115,7 +115,9 @@ const Button: React.FC<
       ? styles.outline
       : styles.def
   } ${
-    size === "sm"
+    size === "xs"
+      ? styles["size-xs"]
+      : size === "sm"
       ? styles["size-sm"]
       : size === "lg"
       ? styles["size-lg"]
