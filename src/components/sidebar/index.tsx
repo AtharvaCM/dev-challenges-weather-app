@@ -2,7 +2,7 @@ import React from "react";
 
 import { SidebarType } from "../../types/components/sidebar";
 
-import Button from "../UI/Button";
+import Button from "../UI/button";
 
 import Shower from "../../../src/assets/Shower.png";
 import CloudBackground from "../../../src/assets/Cloud-background.png";
