@@ -12,13 +12,16 @@ const Sidebar: React.FC<SidebarType> = ({ className }) => {
     <div className={`${className} h-screen py-5`}>
       {/* Top Buttons */}
       <div className="flex justify-between px-10">
-        <Button size="xs" className="!rounded-none !bg-[#6E707A] !text-white">
+        <Button
+          size="xs"
+          className="!rounded-none !bg-[#6E707A] !py-0 !text-white"
+        >
           Search for places
         </Button>
         <Button
           size="xs"
           starticon="gps_fixed"
-          className="!rounded-full !bg-[#6E707A] !text-white"
+          className="!rounded-full !bg-[#6E707A] !py-0 !text-white"
         ></Button>
       </div>
 
