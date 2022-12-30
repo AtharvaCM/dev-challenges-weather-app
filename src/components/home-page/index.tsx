@@ -6,7 +6,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="flex">
       <Sidebar className="w-1/4 bg-[#1E213A]" />
-      <MainContainer className="w-3/4 bg-[#100E1D] px-[10%] py-5" />
+      <MainContainer className="w-3/4 bg-[#100E1D] px-[7%] py-5" />
     </div>
   );
 };
