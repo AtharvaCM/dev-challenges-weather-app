@@ -4,3 +4,10 @@ export function getDate(dateStr: string) {
 
   return `${day}, ${date} ${month}`;
 }
+
+export function getTodaysDate() {
+  const dateObj = new Date();
+  const [day, month, date] = dateObj.toDateString().split(" ");
+
+  return `${day}, ${date} ${month}`;
+}
