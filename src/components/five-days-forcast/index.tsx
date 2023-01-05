@@ -15,7 +15,7 @@ const FiveDaysForecast: React.FC<FiveDaysForecastType> = (props) => {
 
   console.log(getDate(forecastList[0].dt_txt));
   return (
-    <div className={`flex justify-between ${className}`}>
+    <div className={`grid grid-cols-2 gap-4 md:grid-cols-5 ${className}`}>
       <Card className="flex flex-col items-center justify-center text-white">
         <p>Tomorrow</p>
         <img

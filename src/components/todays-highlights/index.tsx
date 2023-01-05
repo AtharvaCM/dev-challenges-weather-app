@@ -33,7 +33,7 @@ const TodaysHighlights: React.FC<TodaysHighlightsType> = ({ className }) => {
       </h1>
 
       {/* Card Grid */}
-      <div className="grid w-full grid-cols-2 gap-6 text-[#E7E7EB]">
+      <div className="grid w-full grid-cols-1 gap-6 text-[#E7E7EB] md:grid-cols-2">
         <Card className="flex w-full flex-col items-center justify-center text-white">
           <p className="mb-2">Wind status</p>
           {/* Wind speed */}
