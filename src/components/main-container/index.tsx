@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { MainContainerType } from "../../types/components/main-container";
 import { ForecastType } from "../../types/weather";
 import FiveDaysForecast from "../five-days-forcast";
+import TodaysHighlights from "../todays-highlights";
 
 import Button from "../UI/button";
 
@@ -43,6 +44,9 @@ const MainContainer: React.FC<MainContainerType> = ({ className }) => {
 
       {/* Five Days Forecast Cards*/}
       <FiveDaysForecast forecastList={forecastList} className="mt-10" />
+
+      {/* Today's Highlights */}
+      <TodaysHighlights className="mt-10" />
     </div>
   );
 };
