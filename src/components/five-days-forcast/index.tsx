@@ -9,8 +9,11 @@ import Card from "../UI/card";
 const FiveDaysForecast: React.FC<FiveDaysForecastType> = (props) => {
   const { className, forecastList } = props;
 
-  console.log(getDate(forecastList[0].dt_txt));
+  if (forecastList.length === 0) {
+    return <p>No forecast data found!</p>;
+  }
 
+  console.log(getDate(forecastList[0].dt_txt));
   return (
     <div className={`flex justify-between ${className}`}>
       <Card className="flex flex-col items-center justify-center text-white">
