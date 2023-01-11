@@ -145,7 +145,6 @@ const Button: React.FC<
       ...props,
       className: `${btnClass} ${className} flex items-center gap-2`,
       disabled: disabled,
-      onClick: () => console.log("clicked"),
     },
     starticon && (
       <span className="material-icons leading-[unset]">{starticon}</span>
