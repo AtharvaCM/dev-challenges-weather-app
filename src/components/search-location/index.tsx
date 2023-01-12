@@ -6,13 +6,13 @@ import {
 } from "../../types/components/search-location";
 
 import CityListJson from "../../utils/city.min.json";
+import LocationListRow from "../location-list-row";
 
 import Button from "../UI/button";
 
 const SearchLocation: React.FC<SearchLocationType> = ({ onCancel }) => {
   const [enteredSearch, setEnteredSearch] = useState<string>("");
   const [cityList, setCityList] = useState<CityType[]>([]);
-  console.log("enteredSearch: ", enteredSearch);
 
   useEffect(() => {
     if (enteredSearch === "") {
@@ -22,7 +22,7 @@ const SearchLocation: React.FC<SearchLocationType> = ({ onCancel }) => {
 
     setCityList(
       CityListJson.cities.filter((city) => {
-        return city.name.includes(enteredSearch);
+        return city.name.toLowerCase().includes(enteredSearch.toLowerCase());
       })
     );
   }, [enteredSearch]);
@@ -55,12 +55,7 @@ const SearchLocation: React.FC<SearchLocationType> = ({ onCancel }) => {
         )}
         {cityList.length !== 0 &&
           cityList.map((city) => (
-            <div className="mb-2 flex items-center justify-between px-2 py-4 hover:border hover:border-[#616475]">
-              <p>{city.name}</p>
-              <span className="material-icons text-[#616475]">
-                chevron_right
-              </span>
-            </div>
+            <LocationListRow city={city} key={city.id} onSelect={onCancel} />
           ))}
       </div>
     </div>

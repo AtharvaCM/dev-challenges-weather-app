@@ -12,13 +12,15 @@ import { getTodaysDate } from "../../utils/date-helper";
 import SearchLocation from "../search-location";
 
 const Sidebar: React.FC<SidebarType> = ({ className }) => {
-  const URL = `https://api.openweathermap.org/data/2.5/weather?lat=18.52&lon=73.85&units=metric&appid=${process.env.REACT_APP_WEATHER_APPID}`;
+  const lat = localStorage.getItem("lat") || 18.52;
+  const lon = localStorage.getItem("lon") || 73.85;
+  const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${process.env.REACT_APP_WEATHER_APPID}`;
 
   const [currentWeather, setCurrentWeather] = useState<CurrentWeatherAPIType>();
   const [showSearch, setShowSearch] = useState<boolean>(false);
 
   useEffect(() => {
-    const getFiveDaysForecast = async () => {
+    const getCurrentWeather = async () => {
       try {
         const response = await fetch(URL);
         if (response.ok) {
@@ -31,8 +33,8 @@ const Sidebar: React.FC<SidebarType> = ({ className }) => {
       }
     };
 
-    getFiveDaysForecast();
-  }, [URL]);
+    getCurrentWeather();
+  }, [URL, lat, lon]);
 
   const handleCancelClick: () => void = () => {
     setShowSearch(false);
