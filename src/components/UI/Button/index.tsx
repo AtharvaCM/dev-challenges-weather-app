@@ -23,9 +23,6 @@ const Button: React.FC<
     starticon,
     endicon,
   } = props;
-  console.log("variant: ", variant);
-  console.log("disabled: ", disabled);
-  console.log("props: ", { ...props });
 
   const hocus = (variant: string, color: string) => {
     let selectedClass: string = "";

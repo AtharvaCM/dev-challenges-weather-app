@@ -29,7 +29,6 @@ const MainContainer: React.FC<MainContainerType> = ({ className }) => {
     getFiveDaysForecast();
   }, [URL]);
 
-  console.log("forecastList: ", forecastList);
   return (
     <div className={className}>
       {/* Celcius / Farenheight switch */}
