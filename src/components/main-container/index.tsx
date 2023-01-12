@@ -8,7 +8,9 @@ import TodaysHighlights from "../todays-highlights";
 import Button from "../UI/button";
 
 const MainContainer: React.FC<MainContainerType> = ({ className }) => {
-  const URL = `https://api.openweathermap.org/data/2.5/forecast?lat=18.52&lon=73.85&units=metric&appid=${process.env.REACT_APP_WEATHER_APPID}`;
+  const lat = localStorage.getItem("lat") || 18.52;
+  const lon = localStorage.getItem("lon") || 73.85;
+  const URL = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=metric&appid=${process.env.REACT_APP_WEATHER_APPID}`;
 
   const [forecastList, setForecastList] = useState<ForecastType[]>([]);
 
@@ -27,7 +29,7 @@ const MainContainer: React.FC<MainContainerType> = ({ className }) => {
     };
 
     getFiveDaysForecast();
-  }, [URL]);
+  }, [URL, lat, lon]);
 
   return (
     <div className={className}>
